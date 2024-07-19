@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shutdown Notice</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="lg:p-10 bg-gray-100 flex flex-col h-screen">
+    <div class="header flex justify-between w-full xs:flex-col">
+      <img
+        class="h-24 w-72"
+        alt=""
+        src="data:image/png;base64,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"
+      />
+      <div class="text-indigo-600 text-md">19/07/2024</div>
+    </div>
+
+    <div class="lg:p-10">
+      <div class="heading text-3xl text-center">
+        <h1 class="text-indigo-600 text-md">Shutdown Notice for Cashbig.in</h1>
+      </div>
+      <section class="mt-10 p-10">
+        <p>
+          Dear Users, It is with a heavy heart that we announce the shutdown of
+          Cashbig.in. Since our inception on February 26, 2018, we have been
+          dedicated to bringing valuable cashback opportunities to our
+          community. What began as a vision to create a seamless and rewarding
+          cashback experience has grown into a platform where 7,685 users
+          registered and benefitted from over 7 lakh rupees distributed in
+          cashback rewards.
+        </p>
+        <br />
+        <p>
+          The journey of Cashbig.in was fueled by a deep passion for technology
+          and innovation. As a software engineer, I built this platform using
+          WordPress, crafting numerous lines of code during the challenging
+          times of the COVID-19 pandemic. The decision to separate the cashback
+          module from Bigtricks was a strategic move aimed at refining and
+          enhancing user experience, and it allowed us to focus on providing
+          exceptional value to our users.
+        </p>
+        <br />
+        <p>
+          The main idea behind creating Cashbig was to provide cashback
+          instantly or with minimal delay. I was often frustrated with other
+          cashback websites where tracking transactions could take up to 72
+          hours, leaving users uncertain if their orders were tracked. Even once
+          tracked, it could take more than three months to finalize the cashback
+          status, with many instances of cashback being declined by the client.
+          I solved this problem with the help of technology, enabling instant
+          tracking of purchases or transactions. As soon as the return period
+          was over, users received their rewards directly in their Paytm wallet
+          or bank account. For most of our offers, such as gaming, account
+          opening, demat accounts, and credit cards, which generally did not
+          involve returns, we rewarded users as soon as the transaction was
+          completed. With a user-oriented community and active Telegram groups,
+          users could connect with me directly, and I would help them get their
+          cashback as soon as possible.
+        </p>
+        <p>
+          However, despite our best efforts and the support of our community, we
+          have made the difficult decision to shut down Cashbig.in. As a working
+          professional currently employed as a software engineer, the increasing
+          demands of my role made it challenging to manage both Bigtricks.in and
+          Cashbig.in. I tried to hire more people to run Cashbig, but building a
+          team proved difficult. Financial constraints made it hard to pay
+          employees, and my natural inclination as a techie made team management
+          challenging. Additionally, the affiliate marketing landscape is risky;
+          we faced fund crunches due to delayed billings and occasional
+          instances of zero billing due to fraud. Market fluctuations and
+          reduced marketing budgets from companies further compounded these
+          challenges.
+        </p>
+        <br />
+        <p>
+          Ultimately, I realized that my true passion lies in developing
+          software and technology. I find fulfillment in creating and optimizing
+          tech solutions, and I have decided to focus my efforts full-time on
+          this path.
+        </p>
+        <p>
+          Throughout this journey, I have learned immensely and had the
+          privilege of establishing partnerships with numerous brands and
+          networks. These relationships have been invaluable, contributing to
+          the growth and success of Cashbig.in.
+        </p>
+        <br />
+        <p>
+          While it is difficult to say goodbye, I am grateful for the support
+          and engagement of our users and partners. The lessons learned and the
+          connections made will continue to inspire and guide future endeavors.
+          I’m not closing everything down. While our cashback module is shutting
+          down, we will continue to provide heavily discounted deals, cashback
+          offers, and exclusive loot deals through our
+          <a
+            class="text-indigo-600 cursor-pointer"
+            target="_blank"
+            href="https://t.me/bigtricksin"
+            >Bigtricks Telegram channel</a
+          >. Our community remains active and connected, and you can stay
+          involved too by joining our
+          <a
+            class="text-indigo-600 cursor-pointer"
+            target="_blank"
+            href="https://t.me/+UdUnk0QHudLJxU9u"
+            >Telegram Group</a
+          >
+          . Although I’m stepping back from cashback, I’m still passionate about
+          online shopping discounts and deals. It’s just that managing
+          everything has become challenging.
+        </p>
+        <br />
+        <p>Thank you for being a part of our journey.</p>
+        <br />
+        <p>With sincere gratitude,</p>
+        <br />
+        <p>Sonu Gupta</p>
+        <p>Founder, Cashbig.in</p>
+      </section>
+      <div class="flex">
+        <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 496 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            />
+          </svg>
+        </span>
+
+        <!-- Facebook -->
+        <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 320 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+            />
+          </svg>
+        </span>
+
+        <!-- Instagram -->
+        <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            />
+          </svg>
+        </span>
+
+        <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            />
+          </svg>
+        </span>
+
+        <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 496 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"
+            />
+          </svg>
+        </span>
+
+        <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 576 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+            />
+          </svg>
+        </span>
+
+        <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
